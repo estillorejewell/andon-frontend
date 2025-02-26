@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import axios from "axios";
 import "./App.css"; 
 
-const backendURL = "https://62e8f3ea-90d4-4034-bf70-edb270351249-00-1wp3eqo1ox26o.sisko.replit.dev"; 
+const backendURL = "https://andon-backend.onrender.com"; 
 const socket = io(backendURL, { transports: ["websocket"] }); 
 
 const productionAreas = {
