@@ -4,7 +4,10 @@ import axios from "axios";
 import "./App.css"; 
 
 const backendURL = "https://andon-backend.onrender.com"; 
-const socket = io(backendURL, { transports: ["websocket"] }); 
+// const socket = io(backendURL, { transports: ["websocket"] }); 
+const socket = io("https://andon-backend.onrender.com", {
+  transports: ["websocket"],
+});
 
 const productionAreas = {
   "Loop 1": ["A&T", "TMA", "SUBA/CONA"],
